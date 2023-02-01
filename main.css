@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    
+}
+p,h1,h2,h3,h4,h5,h6{
+    overflow-wrap: break-word;
+
+
+}
+
+body {
+    background: url(images/bg-pattern-top-mobile.svg);
+    background-repeat: no-repeat;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+
+.container {
+
+    padding: 2.8em 1.5em;
+
+}
+
+.left-col {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.3rem;
+    line-height: .8em;
+    color: var(--Very-Dark-Magenta);
+    padding: 1em;
+}
+
+.description {
+    color: gray;
+}
+
+.right-col {
+    display: block;
+    
+}
+
+.reviews {
+    background-color: var(--Light-Grayish-Magenta);
+    text-align: center;
+    padding: 1.2em 0;
+    border-radius: .7em;
+    margin-top: 1em;
+    color: var(--Very-Dark-Magenta);
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: .3em;
+}
+
+.buyer {
+
+    max-width: 100%;
+    background-color: var(--Very-Dark-Magenta);
+    margin-top: 1em;
+    padding: 2em;
+    color: white;
+    border-radius: .7em;
+}
+
+.buyer-details {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    
+}
+
+.buyer-comment {
+    margin-top: 2em;
+    
+}
+
+.buyer-img {
+    border-radius: 3em;
+    max-width: 2.5em;
+    max-height: 2.5em;
+}
+
+.buyer-status > p{
+   display: block;
+   margin-top: .3em;
+   
+}
+
+.verified-buyer {
+    color: var(--Soft-Pink);
+}
