@@ -31,11 +31,22 @@ body {
     
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
 .container {
 
     padding: 2.8em 1.5em;
 
+    
+
 }
+
 
 .left-col {
     text-align: center;
@@ -45,7 +56,8 @@ h1 {
     font-size: 2.3rem;
     line-height: .8em;
     color: var(--Very-Dark-Magenta);
-    padding: 1em;
+    margin: 1em;
+    
 }
 
 .description {
@@ -54,6 +66,7 @@ h1 {
 
 .right-col {
     display: block;
+    
     
 }
 
@@ -99,12 +112,125 @@ h2 {
     max-height: 2.5em;
 }
 
-.buyer-status > p{
+.buyer-status {
    display: block;
    margin-top: .3em;
+   max-width: 100%;
    
 }
 
 .verified-buyer {
     color: var(--Soft-Pink);
+}
+
+
+
+
+@media only screen and (min-width:830px) {
+
+    
+
+    .hero {
+        display: flex;
+        
+        
+    }
+    
+    .left-col {
+        text-align: start;
+        padding: .8em;
+        width: 50%;
+        
+    }
+
+    .right-col {
+        width: 50%;
+        padding: 3.5em;
+        
+    }
+
+    
+
+    h1 {
+        margin: 1.5em 0;
+        max-width: 95%;
+        font-size: 3rem;
+        
+    }
+
+    .description {
+        margin-top: -3em;
+        max-width: 90%;
+    }
+
+    
+    
+    .reviews {
+        
+        display: flex;
+        width: 90%;
+        padding: .8em;
+        border-radius: .4em;
+        gap: .2em;
+        
+        
+    }
+
+    .reviews-main {
+        margin-top: 1.5em;
+    }
+
+    .reviews1 {
+        margin-left: 1.5em;
+    }
+
+    .reviews2 {
+        margin-left: 3em;
+    }
+
+    h2 {
+        font-size: .9rem;
+        margin-left: 2em;
+    }
+   
+
+
+    .second-section {
+        display: flex;
+        gap: .5em;
+    }
+
+    .buyer {
+        
+        height: 35vh;
+    }
+
+    .buyer2{
+        margin-top: 2em;
+    }
+
+    .buyer3{
+        margin-top: 3em;
+    }
+}
+
+
+
+@media only screen and (min-width:1200px) {
+    main {
+        padding: 0 5em;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    main {
+        width: 1400px;
+        margin: 0 auto;
+    }
+
+    .buyer {
+        
+        height: 30vh;
+    }
+
 }
